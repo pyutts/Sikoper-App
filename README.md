@@ -62,5 +62,5 @@ Agar aplikasi **Sikoper** dapat berjalan dengan baik, Anda perlu memenuhi bebera
    - **SQLite**:
      - Jika menggunakan SQLite, aplikasi sudah menyertakan file database yang dapat langsung digunakan.
 
-### Object Oriented Programing (Final Exams MI)**
+### Object Oriented Programing (Final Exams MI)
  
