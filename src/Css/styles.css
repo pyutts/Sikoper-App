@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*
+ *  Untuk Button Semua Tombol di aplikasi
+ */
+
+.button {
+    -fx-font-size: 23px;
+    -fx-background-color: #404B7C;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #9AB3DA;
+    -fx-text-fill: #495899;
+}
+
+

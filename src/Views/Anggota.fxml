@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnggotaController">
+    <stylesheets>
+        <URL value="@/Css/styles.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="84.0" fitWidth="221.0" layoutX="30.0" layoutY="82.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="82.0">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="101.0" text="Anggota" textFill="#404b7c" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font name="Poppins ExtraBold" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#404b7c" height="73.0" layoutX="258.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="4.0" AnchorPane.leftAnchor="258.0" AnchorPane.topAnchor="93.0" />
+      <TextField fx:id="searchField" layoutX="500.0" layoutY="77.0" prefHeight="55.0" prefWidth="438.0" promptText="Cari Anggota" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tableView" layoutX="500.0" layoutY="144.0" onMouseClicked="#onTableClicked" prefHeight="700.0" prefWidth="1169.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="144.0">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="128.0" text="No" />
+          <TableColumn fx:id="colNama" prefWidth="282.0" text="Nama" />
+          <TableColumn fx:id="colNoTelepon" prefWidth="245.0" text="No Telepon" />
+          <TableColumn fx:id="colAlamat" prefWidth="358.0" text="Alamat" />
+          <TableColumn fx:id="colKodeMember" prefWidth="128.0" text="Kode Member" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNama" layoutX="29.0" layoutY="270.0" prefHeight="55.0" prefWidth="429.0" promptText="Nama" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="270.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNoTelepon" layoutX="29.0" layoutY="340.0" prefHeight="55.0" prefWidth="429.0" promptText="No Telepon" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtAlamat" layoutX="29.0" layoutY="410.0" prefHeight="129.0" prefWidth="429.0" promptText="Alamat" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="410.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextArea>
+      <ComboBox fx:id="comboKodeMember" layoutX="29.0" layoutY="215.0" prefHeight="41.0" prefWidth="430.0" promptText="Kode Member" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="215.0" />
+      <Button fx:id="btnTambah" layoutX="31.0" layoutY="566.0" mnemonicParsing="false" onAction="#tambahAnggota" prefHeight="50.0" prefWidth="143.0" text="Tambah" AnchorPane.bottomAnchor="298.0" AnchorPane.leftAnchor="31.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEdit" layoutX="190.0" layoutY="566.0" mnemonicParsing="false" onAction="#editAnggota" prefHeight="50.0" prefWidth="130.0" text="Edit" AnchorPane.bottomAnchor="298.0" AnchorPane.leftAnchor="190.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHapus" layoutX="335.0" layoutY="566.0" mnemonicParsing="false" onAction="#hapusAnggota" prefHeight="50.0" prefWidth="120.0" text="Hapus" AnchorPane.bottomAnchor="298.0" AnchorPane.leftAnchor="335.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnKembali" layoutX="1519.0" layoutY="71.0" mnemonicParsing="false" onAction="#kembaliDashboard" prefHeight="53.0" prefWidth="146.0" text="Kembali" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

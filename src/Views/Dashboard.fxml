@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="914.0" prefWidth="1696.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="Controller.DashboardController">
+    <stylesheets>
+        <URL value="@/Css/styles.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="134.0" fitWidth="344.0" layoutX="1062.0" layoutY="235.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="235.0">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnRekapan" fitHeight="78.0" fitWidth="338.0" layoutX="875.0" layoutY="560.0" onMouseClicked="#tombolRekapanClick" AnchorPane.bottomAnchor="276.0" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="560.0">
+         <image>
+            <Image url="@../Images/btnRekapan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnSimpanan" fitHeight="78.0" fitWidth="338.0" layoutX="1269.0" layoutY="442.0" onMouseClicked="#tombolSimpananClick" AnchorPane.bottomAnchor="394.0" AnchorPane.rightAnchor="89.0" AnchorPane.topAnchor="442.0">
+         <image>
+            <Image url="@../Images/btnSimpanan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnAnggota" fitHeight="78.0" fitWidth="338.0" layoutX="875.0" layoutY="440.0" onMouseClicked="#tombolAnggotaClick" AnchorPane.bottomAnchor="396.0" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="440.0">
+         <image>
+            <Image url="@../Images/btnAnggota.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPinjaman" fitHeight="78.0" fitWidth="338.0" layoutX="1269.0" layoutY="562.0" onMouseClicked="#tombolPinjamanClick" AnchorPane.bottomAnchor="274.0" AnchorPane.rightAnchor="89.0" AnchorPane.topAnchor="562.0">
+         <image>
+            <Image url="@../Images/btnPinjaman.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="576.0" fitWidth="618.0" layoutX="115.0" layoutY="169.0" AnchorPane.bottomAnchor="169.0" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="169.0">
+         <image>
+            <Image url="@../Images/img1.png" />
+         </image>
+      </ImageView>
+        <!-- Tambahkan tombol logout -->
+      <Button fx:id="btnLogout" layoutX="1500.0" layoutY="50.0" mnemonicParsing="false" onAction="#tombolLogoutClick" prefHeight="42.0" prefWidth="120.0" text="Logout" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SimpananController">
+    <stylesheets>
+        <URL value="@/Css/styles.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="84.0" fitWidth="221.0" layoutX="19.0" layoutY="82.0" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="82.0">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="264.0" layoutY="101.0" text="Simpanan" textFill="#404b7c" AnchorPane.leftAnchor="264.0" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font name="Poppins ExtraBold" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#404b7c" height="73.0" layoutX="247.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="4.0" AnchorPane.leftAnchor="247.0" AnchorPane.topAnchor="93.0" />
+      <TextField fx:id="searchField" layoutX="500.0" layoutY="77.0" prefHeight="55.0" prefWidth="438.0" promptText="Cari Simpanan" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tableSimpanan" layoutX="500.0" layoutY="144.0" onMouseClicked="#onTableClicked" prefHeight="700.0" prefWidth="1169.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="144.0">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="50.0" text="No" />
+          <TableColumn fx:id="colKodeTransaksi" prefWidth="128.0" text="Kode Transaksi" />
+          <TableColumn fx:id="colKodeMember" prefWidth="128.0" text="Kode Member" />
+          <TableColumn fx:id="colNamaAnggota" prefWidth="282.0" text="Nama" />
+          <TableColumn fx:id="colTanggal" prefWidth="255.6666259765625" text="Tanggal Transaksi" />
+          <TableColumn fx:id="colJumlah" prefWidth="231.3333740234375" text="Jumlah" />
+          <TableColumn fx:id="colTipe" prefWidth="278.0" text="Tipe Transaksi" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCariMember" layoutX="258.0" layoutY="215.0" mnemonicParsing="false" onAction="#cariMember" prefHeight="41.0" prefWidth="199.0" text="Cari Member" AnchorPane.leftAnchor="258.0" AnchorPane.topAnchor="215.0" />
+      <ComboBox fx:id="cbKodeMember" layoutX="29.0" layoutY="215.0" prefHeight="51.0" prefWidth="221.0" promptText="Kode Member" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="215.0" />
+      <TextField fx:id="tfNamaAnggota" layoutX="28.0" layoutY="300.0" prefHeight="55.0" prefWidth="429.0" promptText="Nama Anggota" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="dpTanggal" layoutX="29.0" layoutY="370.0" prefHeight="55.0" prefWidth="429.0" promptText="Tanggal Transaksi" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="370.0" />
+      <TextField fx:id="tfJumlah" layoutX="29.0" layoutY="440.0" prefHeight="55.0" prefWidth="429.0" promptText="Jumlah (Rp)" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="440.0">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cbJenisTransaksi" layoutX="29.0" layoutY="510.0" prefHeight="41.0" prefWidth="430.0" promptText="Tipe Transaksi" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="510.0" />
+      <Button fx:id="btnTambah" layoutX="31.0" layoutY="596.0" mnemonicParsing="false" onAction="#tambahData" prefHeight="50.0" prefWidth="143.0" text="Tambah" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="596.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEdit" layoutX="190.0" layoutY="596.0" mnemonicParsing="false" onAction="#editData" prefHeight="50.0" prefWidth="130.0" text="Edit" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="596.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHapus" layoutX="335.0" layoutY="596.0" mnemonicParsing="false" onAction="#hapusData" prefHeight="50.0" prefWidth="120.0" text="Hapus" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="596.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnKembali" layoutX="1519.0" layoutY="71.0" mnemonicParsing="false" onAction="#kembaliDashboard" prefHeight="53.0" prefWidth="146.0" text="Kembali" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
