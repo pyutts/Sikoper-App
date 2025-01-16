@@ -62,5 +62,14 @@ Agar aplikasi **Sikoper** dapat berjalan dengan baik, Anda perlu memenuhi bebera
    - **SQLite**:
      - Jika menggunakan SQLite, aplikasi sudah menyertakan file database yang dapat langsung digunakan.
 
+### 5. **Users Admin**
+   **Masukkan Users Admin ini jika ingin login ke dalam aplikasi**:
+   | No | Username | Password |
+   |----------|----------|----------|
+   | 1 | admin1 | admin234 |
+   | 2 | admin2 | admin456 |
+
+   
+
 ### Object Oriented Programing (Final Exams MI)
  
