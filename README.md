@@ -2,7 +2,7 @@
 
 **Sikoper** adalah aplikasi berbasis Java yang dirancang untuk membantu koperasi dalam mengelola data anggota, transaksi, simpanan, pinjaman, dan laporan keuangan secara efisien. Aplikasi ini menggunakan antarmuka grafis untuk mempermudah interaksi dengan pengguna, dan dapat digunakan oleh pengelola koperasi untuk melakukan berbagai pengelolaan keuangan dan administrasi anggota koperasi.
 
-## Jika Hanya ingin Mencoba Aplikasi ini, Aplikasi ini sudah release di github silahkan lihat di link ini 
+**Jika Hanya ingin Mencoba Aplikasi ini, Aplikasi ini sudah release di github silahkan lihat di link ini**
 - [Installer SIKOPER](https://github.com/pyutts/Sikoper-App/releases/tag/v1.0.1)
 
 ## Fitur Utama
